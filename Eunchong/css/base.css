@@ -1,0 +1,22 @@
+* {
+    padding : 0;
+    margin : 0;
+    border : 0;
+}
+
+a {
+    color : #fff;
+    text-decoration: none;
+}
+
+body {
+
+    font-size: 14px;
+
+}
+img {
+    width: 100%;   
+}
+li {
+    list-style: none;
+}
