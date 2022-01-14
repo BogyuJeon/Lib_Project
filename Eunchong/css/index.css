@@ -1,76 +1,194 @@
 body {
-    background-color: darkgreen;
+    height: 2000px;
 }
 
-.container {
+/* 이미지 콘텐츠 영역 */
+#h-container {
+    /* 버튼 기준(부모) */
+    position: relative; 
+    width: 100%;
+    height: 470px;
+}
+.h-wrap {
+/* 지나가는 이미지 기준(부모) */
     position: relative;
     width: 100%;
-    background-color: #202020;
+    height: 470px;
     overflow: hidden;
 }
-
-.right-util {
-    float : right;
-}
-
-.right-util li {
-    display: inline-block;
-    width: 90px;
-}
-
-.right-util ul {
+.h-wrap ul li {
+    position: absolute;
     width: 100%;
-    margin-right: 60px;
+    height: 470px;
+    font-size: 300px;
+    top : 0;
+}
+.h-wrap li:first-child {
+    left : 0;
+    background-color: saddlebrown;
+}
+.h-wrap li:nth-child(2) {
+    left : 100%;
+    background-color: rgb(193, 167, 243);
+}
+.h-wrap li:nth-child(3) {
+    left : 100%;
+    background-color: rgb(108, 72, 133);
+}
+.h-wrap li:nth-child(4) {
+    left : 100%;
+    background-color: rgb(75, 10, 54);
+}
+.h-wrap li > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+/* image end */
+
+/* 버튼 디자인 */
+.h-btns {
+    position: absolute;
+    left: 50%;
+    top : 95%;
+}
+.h-btns li {
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    background-color: #000;
+    text-align: center;
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.h-btns li:hover {
+    background-color : #cf3131;
+}
+.h-btns li.on {
+    background-color : #cf3131;
+}
+/* button end */
+
+/* 검색 버튼 */
+.main_bg {
+    position: absolute;
+    width: 100%;
+    top : 98px;
+    z-index: 99999;
+}
+.main1 {
+    position: relative;
+}
+.section {
+    clear: both;
+    position: relative;
+    margin: 0 auto;
+}
+.title-box {
+    position: relative;
+    margin : 0px auto;
+    width: 890px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 11px rgb(0 0 0 / 30%);
 }
 
-.left-util {
+.title-box input {
+    width: 100%;
+    height: 75px;
+    box-sizing: border-box;
+    line-height: 80px;
+    padding : 0 2% 0 138px;
+    color : #333;
+    font-size: 18px;
+    border : 0;
+    cursor: text;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding-right: 175px;
+}
+.title-box label {
+    position: absolute;
     display: inline-block;
-    width: 100px;
-    height: 44px;
-    margin-left: 40px;
-}
-
-.left-util li {
-
-    width: 110px;
-
-}
-.left-util li a{
-    display: block;
-    font-size: 30px;
+    top:18px;
+    left : 30px;
+    font-size: 0;
+    color : #4881fd;
+    width: 38px;
+    height: 38px;
+    letter-spacing: -1.5px;
     text-align: center;
-    height: 50px;
-    line-height: 50px;
-    width: 110px;
-    font-weight: 700;
+    background: url("https://library.busan.go.kr/resources/homepage/busanlibrary/img/search-icon.png") no-repeat 0 0;
 }
 
-
-.right-util li a {
-    display: block;
+.title-box button {
+    position: absolute;
+    right : 7px;
+    top : 4px;
     text-align: center;
-    height: 50px;
-    line-height: 50px;
-    font-weight: 700;
+    font-size: 0;
+    background : url("https://library.busan.go.kr/resources/homepage/busanlibrary/img/search-btn.png");
+    z-index: 190;
+    width: 175px;
+    height: 70px;
+    cursor: pointer;
+}
+/* end search */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 반응형 작업 공간 */
+
+/* @media (max-width : 1260px) {
+    .section {
+        width : 100%;
+    }
 }
 
-.right-util .lib {
-    color : #58adee;   
+@media (max-width : 1000px) {
+    .title-box button {
+        position: absolute;
+        right : 7px;
+        top : 0;
+        text-align: center;
+        background-image: ("https://library.busan.go.kr/resources/homepage/busanlibrary/img/search-btn.png");
+        z-index: 190;
+        width: 175px;
+        height: 70px;
+    }
+    
 }
+ */
 
-.right-util li a:hover {
-    color : red;  
+/* @media (max-width : 1260px) {
+
+    .section {
+        width: 100%;
+        padding: 0 5%;
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        padding-right: 0;
+    }
+    
+    
 }
-
-.nav-header {
-    width: 100px;
-    height: 50px;
-    background-color: darkkhaki;
-}
-
-.nav-menu {
-    background-color: darkmagenta;
-
-}
-
-
+ */
