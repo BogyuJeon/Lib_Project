@@ -1,5 +1,5 @@
 body {
-    height: 2000px;
+ 
 }
 
 /* 이미지 콘텐츠 영역 */
@@ -25,19 +25,19 @@ body {
 }
 .h-wrap li:first-child {
     left : 0;
-    background-color: saddlebrown;
+
 }
 .h-wrap li:nth-child(2) {
     left : 100%;
-    background-color: rgb(193, 167, 243);
+
 }
 .h-wrap li:nth-child(3) {
     left : 100%;
-    background-color: rgb(108, 72, 133);
+
 }
 .h-wrap li:nth-child(4) {
     left : 100%;
-    background-color: rgb(75, 10, 54);
+
 }
 .h-wrap li > img {
     position: absolute;
@@ -138,14 +138,12 @@ body {
     cursor: pointer;
 }
 
-.latter-check  {
-    position: absolute;
-    top: -32px;
-    left: 45px;
-    height: 30px;
-    width: 1200px;
+.in-latter-check {
+    width: 800px;
+    margin: 0 auto;
     text-align: right;
 }
+
 .section .check-la {
     display: inline;
     line-height: 30px;
@@ -195,7 +193,7 @@ body {
 
 .book-list-zone {
     box-sizing: border-box;
-    max-width: 1250px;
+    max-width: 1300px;
     height: 400px;
     margin: 0 auto;
     border: 1px solid #e3e3e3;
@@ -259,21 +257,47 @@ body {
     color : #666;
 }
 
-
-
-
-
 /* section-group3 - end */
 
+footer {
+    margin-top: 60px;
+    padding : 0 0 70px;
+    background-color: #2f2f2f;
+}
 
+.f-top {
+    height: 54px;
+    padding : 25px 0;
+    border-bottom: 1px solid #666;
+    
 
+}
+.f-top-in {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: blueviolet;
+}
+.f-top-in .f-in-list {
+    float: left;
+}
+.f-top-in .f-in-list li {
+    display: inline-block;
+    padding : 0 20px;
+}
+.f-top-in .f-in-list li a {
+    display: block;
+    padding : 15px;
+    font-size: 16.5px;
+    font-weight: 600;
+}
+.f-top-in .f-in-list li span {
+    color : #f1d57e;
+}
 
+.f-bootom {
+    padding : 23px 0 0;
 
-
-
-
-
-
+}
 
 
 
@@ -285,39 +309,9 @@ body {
 
 /* 반응형 작업 공간 */
 
-/* @media (max-width : 1260px) {
+ @media (min-width : 1200px) {
     .section {
         width : 100%;
     }
 }
 
-@media (max-width : 1000px) {
-    .title-box button {
-        position: absolute;
-        right : 7px;
-        top : 0;
-        text-align: center;
-        background-image: ("https://library.busan.go.kr/resources/homepage/busanlibrary/img/search-btn.png");
-        z-index: 190;
-        width: 175px;
-        height: 70px;
-    }
-    
-}
- */
-
-/* @media (max-width : 1260px) {
-
-    .section {
-        width: 100%;
-        padding: 0 5%;
-        box-sizing: border-box;
-    }
-
-    .navbar {
-        padding-right: 0;
-    }
-    
-    
-}
- */
