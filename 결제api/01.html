@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- iamport.payment.js -->
+    <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.2.0.js"></script>
+
+</head>
+
+
+<body>
+
+    <button type="button">결제하기</button>
+
+    <script>
+        const btn = document.querySelector('button');
+
+
+        var IMP = window.IMP; // 생략 가능
+        IMP.init("imp15940602"); // 예: imp00000000
+        var IMP_paramsObj = null;
+
+        btn.onclick = () => {
+            IMP_paramsObj = {
+                pg: "html5_inicis",
+                pay_method: "card",
+                merchant_uid: "merchant_" + new Date().getTime,
+                name: "김준일 강사 웹앱개발 강의",
+                amount: 1000,
+                buyer_email: "tdc8165@naver.com",
+                buyer_name: "홍길동",
+                buyer_tel: "010-4242-4242",
+                buyer_addr: "부산광역시 부산진구 가야동",
+                buyer_postcode: "01181"
+            };
+
+
+            IMP.request_pay(IMP_paramsObj,// param
+                function (rsp) { // callback
+                    if (rsp.success) {
+                        alert('결제 성공');
+                        // 결제 성공 시 로직,
+                    } else {
+                        alert('결제에 실패했습니다. 에러 내용 : ' + rsp.error_msg);
+                        // 결제 실패 시 로직,
+                    }
+                }
+            );
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
