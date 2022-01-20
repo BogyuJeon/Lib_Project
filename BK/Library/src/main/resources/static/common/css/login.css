@@ -1,0 +1,269 @@
+@charset "utf-8";
+
+.subpage.wide .login-box{width:800px;margin:2% auto}
+
+.login-box{width:auto;margin:2% auto}
+.login-box .login-type{padding:0 0 7px}
+.login-box .login-type input,
+.login-box .login-type label{vertical-align:middle;cursor:pointer}
+.login-box .login-type label{margin-left:5px;margin-right:10px}
+
+.login-head{padding:10px 0}
+.login-head em{font-style:normal;font-size:14px;color:#888}
+.login-head p{font-size:24px;letter-spacing:-1px;line-height:130%}
+.login-head b{font-weight:800;color:#4aae00}
+
+/* 홈페이지 */
+.login-body{padding:10px 0;overflow:hidden}
+.login-body>.info{padding:10px 0;text-align:center;font-size:14px}
+.login-body>.info strong{display:block;font-size:25px;font-weight:800;letter-spacing:-1px;padding:0 0 10px}
+.login-body>.info b{font-size:110%;color:#4aae00}
+.login-body .tab{padding:10px 0;overflow:hidden}
+.login-body .tab .tcon,
+.login-body .tab li{width:50%;float:left}
+.login-body .tab-bt li a{display:block;background:#4aae00;font-size:120%;color:#fff;padding:15px;text-align:center}
+.login-body .tab li.t1 a{margin-right:4px}
+.login-body .tab .t2 dd,
+.login-body .tab li.t2 a{margin-left:4px}
+.login-body .tab button{text-align:center;display:block;width:80%;margin:0 auto;border:1px solid #4aae00;color:#4aae00;border-radius:3px;font-size:120%;padding:20px 0;background:#fff}
+.login-body .call button:focus,
+.login-body .call button:hover{background-color:#fafafa}
+.login-body .tab dd{padding:3% 0}
+.login-body .tab .exp p{display:block;padding:0 5% 20px;height:80px;color:#888}
+.login-body .tab .call{border:1px solid #eeeeee;padding:10px 0}
+.login-body .tab .call ul{padding:5px 20px}
+.login-body .tab .call li{width:100%;float:none;overflow:hidden;padding:10px 0;font-size:110%}
+.login-body .tab .call li span{float:left;display:block;padding:30px 10px 7px 0px;line-height:25px;color:#666}
+.login-body .tab .call li div{float:right}
+.login-body .tab .call li div,
+.login-body .tab .call li div p{line-height:30px}
+.login-body .tab .call li div p{padding-left:30px;white-space:nowrap;font-size:110%;color:#213756;font-weight:bold;background:url('/resources/common/img/icon-call.gif') no-repeat 0 center}
+.login-body .tab .call li div a{display:block;border:1px solid #266ac4;background:#fff;border-radius:3px;padding:2px 35px}
+
+.login-head b{color:#2586ca}
+.login-body .tab-bt li a{background-color:#b0b0b0}
+.login-body .login button,
+.login-body .tab-bt li a:hover,
+.login-body .tab-bt li a:focus,
+.login-body .tab-bt li a.active{background-color:#273896;border-color:#273896;font-weight:bold;color:#fff}
+.login-body .tab .tcon{width:100%;float:none;clear:both}
+.login-body .tab .call ul{margin:0 5%}
+.login-body .tab .call li{border-top:1px dashed #e7e7e7}
+.login-body .tab .call li.first{border:0}
+.login-body .button-area{text-align:center}
+.login-body button{display:inline-block;width:inherit;padding:20px 10%;margin:5px 5px 0;border-color:#266ac4;color:#266ac4}
+.login-body button:hover,
+.login-body button:focus{background-color:#273896;}
+.login-body fieldset button{color:#fff}
+
+.login-body .login{width:720px;margin:0 auto!important}
+.login-body .login fieldset{padding:30px 0}
+.login-body .login .form-box p{border:1px solid #dbdbdb;border-radius:5px;display:block;overflow:hidden;margin:0 8px 8px 0}
+.login-body .login .form-box input.txt{border:none;height:40px;line-height:40px;width:88%;padding:0 5%}
+.login-body .login .form-box{width:75%;float:left}
+.login-body .login button{width:24.9%;height:92px;line-height:30px;padding:0;margin:0;float:right}
+.login-body .login button i{font-size:100%;}
+.login-body .login button i,
+.login-body .login button span{vertical-align:middle;display:inline-block}
+.login-body .login .form-etc{clear:both;padding:10px 0 0;overflow:hidden}
+.login-body .login .form-etc .checkbox{float:left;width:40%}
+.login-body .login .form-etc .checkbox label{margin-left:1px}
+.login-body .login .form-etc .find a{display:inline-block}
+.login-body .login .form-etc .find a{margin-left:10px}
+.login-body .login .form-etc .find a i{margin-left:5px}
+
+.login-body .loginBox1 { /*background-color: #f7f7f7;*/ overflow: hidden; }
+.login-body .tab .call .callImg { float: left; padding: 5px 30px 5px 0px;}
+.login-type label { color: 325a8f;}
+
+/* 로그인 수정*/
+div.loginBox1 .loginImg { float: left;}
+.call div.joinBtn {padding-top: 35px;}
+
+@media all and (max-width:1050px){
+	.login-body dd.login{width:auto}
+	.login-body dd.login{width:auto;margin:0 5%!important}
+}
+@media all and (max-width:660px){
+	.login-body fieldset button#save-btn span{display:none;}
+	.loginBox1 .login div.loginImgBox {display:none;}
+}
+@media all and (max-width:550px){
+	div.loginBox1 .loginImg { float: none;}
+	
+	.login-body .login button{clear:both;width: 100%;height: 40px;}
+	.login-body .login .form-box{width:100%;}
+	.login-body .login .form-box input.txt{width:100%;box-sizing:border-box;}
+	.login-body .login .form-box p{margin-right:0;}
+}
+
+
+
+.login-info{border:1px solid #d9d9d9;border-radius:5px;padding:230px 5% 5%;margin:5% 10% 3%;text-align:center;
+background:url('/resources/homepage/dge/img/login-c.jpg') no-repeat center 0}
+.login-info .login-info-head h2{font-size:39px;letter-spacing:-1px;line-height:40px}
+.login-info .login-info-head h2 b{color:#1597e7;font-weight:800}
+.login-info .login-info-head h2 b,
+.login-info .login-info-head h2 span{vertical-align:middle}
+.login-info p.exp{padding:20px 0}
+.login-info .btn-area{padding:0 0 10px}
+.login-info .btn-area .btn{padding:20px 10%;font-size:120%;margin:5px 5px 0}
+.btn-area .btn{border-color:#1597e7;color:#1597e7;background:#fff}
+.btn-area .btn:hover,
+.btn-area .btn:focus{border-color:#0385d5;background:#fafafa;color:#0385d5}
+.btn-area .btn1{background:#1597e7;color:#fff}
+.btn-area .btn1:hover,
+.btn-area .btn1:focus{background:#0385d5;color:#fff}
+
+@media all and (max-width:850px){
+	.login-box{width:auto}
+	.login-body .tab .call ul{padding-left:0;padding-right:0}
+	.login-body .tab .exp p{height:auto}
+	.login-body .login{width:auto;margin:0 5%!important}
+	.login-body>.info{padding-left:15px;padding-right:15px}
+}
+@media all and (max-width:600px){
+	.login-body .tab li{width:100%;float:none}
+	.login-body .tab li a{margin:1px 0 0}
+	.login-body fieldset button i{margin:0}
+	.login-body fieldset button span{display:none}
+}
+@media all and (max-width:350px){
+	.login-body .tab .call li span,
+	.login-body .tab .call li div{float:none;clear:both}
+}
+
+/* 키오스크 */
+
+
+
+.login-body2{padding:10px 0;overflow:hidden;float: left;width: 50%;}
+.login-body2>.info{padding:10px 0;text-align:center;font-size:14px}
+.login-body2>.info strong{display:block;font-size:25px;font-weight:800;letter-spacing:-1px;padding:0 0 10px}
+.login-body2>.info b{font-size:110%;color:#4aae00}
+.login-body2 .tab{padding:10px 0;overflow:hidden}
+.login-body2 .tab .tcon,
+.login-body2 .tab li{width:50%;float:left}
+.login-body2 .tab-bt li a{display:block;background:#4aae00;font-size:120%;color:#fff;padding:15px;text-align:center}
+.login-body2 .tab li.t1 a{margin-right:4px}
+.login-body2 .tab .t2 dd,
+.login-body2 .tab li.t2 a{margin-left:4px}
+.login-body2 .tab button{text-align:center;display:block;width:80%;margin:0 auto;border:1px solid #4aae00;color:#4aae00;border-radius:5px;font-size:140%;padding:20px 0;background:#fff}
+.login-body2 .call button:focus,
+.login-body2 .call button:hover{background-color:#fafafa}
+.login-body2 .tab dd{padding: 5% 6%;}
+.login-body2 .tab .exp p{display:block;padding:0 5% 20px;height:80px;color:#888}
+.login-body2 .tab .call{border:1px solid #eeeeee;padding:10px 0}
+.login-body2 .tab .call ul{}
+.login-body2 .tab .call li{width:100%;float:none;overflow:hidden;padding:10px 0;font-size:110%}
+.login-body2 .tab .call li span{float:left;display:block;padding:30px 10px 7px 0px;line-height:25px;color:#666}
+.login-body2 .tab .call li div{float:right}
+.login-body2 .tab .call li div,
+.login-body2 .tab .call li div p{line-height:30px}
+.login-body2 .tab .call li div p{padding-left:30px;white-space:nowrap;font-size:110%;color:#213756;font-weight:bold;background:url('/resources/common/img/icon-call.gif') no-repeat 0 center}
+.login-body2 .tab .call li div a{display:block;border:1px solid #266ac4;background:#fff;border-radius:3px;padding:2px 35px}
+
+.login-head b{color:#2586ca}
+.login-body2 .tab-bt li a{background-color:#b0b0b0}
+.login-body2 .login button,
+.login-body2 .tab-bt li a:hover,
+.login-body2 .tab-bt li a:focus,
+.login-body2 .tab-bt li a.active{background-color:#266ac4;border-color:#266ac4;color:#fff}
+.login-body2 .tab .tcon{width:100%;float:none;clear:both}
+.login-body2 .tab .call ul{margin: 0 4%;}
+.login-body2 .tab .call li{border-top:1px dashed #e7e7e7}
+.login-body2 .tab .call li.first{border:0}
+.login-body2 .button-area{text-align:center}
+.login-body2 button{display:inline-block;width:inherit;padding:20px 10%;margin:5px 5px 0;border-color:#266ac4;color:#266ac4}
+.login-body2 button:hover,
+.login-body2 button:focus{background-color:#1557af}
+.login-body2 fieldset button{color:#fff}
+
+.login-body2 .login{margin:0 auto!important;}
+.login-body2 .login fieldset{padding:30px 0}
+.login-body2 .login .form-box p{border:1px solid #dbdbdb;border-radius:5px;display:block;overflow:hidden;margin:0 8px 8px 0}
+.login-body2 .login .form-box input.txt{border:none;height:40px;line-height:40px;width: 90%;padding:0 5%;}
+.login-body2 .login .form-box{width: 68%;float: left;}
+.login-body2 .login button{width: 30%;height:92px;line-height:30px;padding:0;margin:0;}
+.login-body2 .login button i{font-size:130%;}
+.login-body2 .login button i,
+.login-body2 .login button span{vertical-align:middle;display:inline-block}
+.login-body2 .login .form-etc{clear:both;padding:10px 0 0;overflow:hidden}
+.login-body2 .login .form-etc .checkbox{float:left;width:40%}
+.login-body2 .login .form-etc .checkbox label{margin-left:1px}
+.login-body2 .login .form-etc .find a{display:inline-block}
+.login-body2 .login .form-etc .find a{margin-left:10px}
+.login-body2 .login .form-etc .find a i{margin-left:5px}
+
+.login-body2 .loginBox1 {background-color: #f7f7f7;overflow: hidden;height: 300px;text-align:  center;margin: 0 auto!important;}
+.login-body2 .tab .call .callImg {width: 100px;float: left;padding: 5px 15px 5px 0px;}
+.login-type label { color: 325a8f;}
+
+.login-body2 .tit{font-size: 135%;padding: 15px 30px 0px 35px;text-align: left;}
+
+/* 로그인 수정*/
+div.loginBox1 .loginImg { float: left;}
+.call div.joinBtn {padding-top: 35px;}
+@media all and (max-width:1050px){
+	.login-body2 dd.login{width:auto}
+	.login-body2 dd.login{width:auto;margin:0 5%!important}
+}
+@media all and (max-width:550px){
+	div.loginBox1 .loginImg { float: none;}
+	.loginBox1 .login div.loginImgBox {text-align: center;}
+}
+@media all and (max-width:660px){
+	.login-body2 fieldset button#save-btn span{display:none;}
+}
+
+.login-info{border:1px solid #d9d9d9;border-radius:5px;padding:230px 5% 5%;margin:5% 10% 3%;text-align:center;
+background:url('/resources/homepage/dge/img/login-c.jpg') no-repeat center 0}
+.login-info .login-info-head h2{font-size:39px;letter-spacing:-1px;line-height:40px}
+.login-info .login-info-head h2 b{color:#1597e7;font-weight:800}
+.login-info .login-info-head h2 b,
+.login-info .login-info-head h2 span{vertical-align:middle}
+.login-info p.exp{padding:20px 0}
+.login-info .btn-area{padding:0 0 10px}
+.login-info .btn-area .btn{padding:20px 10%;font-size:120%;margin:5px 5px 0}
+.btn-area .btn{border-color:#1597e7;color:#1597e7;background:#fff}
+.btn-area .btn:hover,
+.btn-area .btn:focus{border-color:#0385d5;background:#fafafa;color:#0385d5}
+.btn-area .btn1{background:#1597e7;color:#fff}
+.btn-area .btn1:hover,
+.btn-area .btn1:focus{background:#0385d5;color:#fff}
+
+@media all and (max-width:850px){
+	.login-box{width:auto}
+	.login-body2 .tab .call ul{padding-left:0;padding-right:0}
+	.login-body2 .tab .exp p{height:auto}
+	.login-body2 .login{width:auto;margin:0 5%!important}
+	.login-body2>.info{padding-left:15px;padding-right:15px}
+}
+@media all and (max-width:600px){
+	.login-body2 .tab li{width:100%;float:none}
+	.login-body2 .tab li a{margin:1px 0 0}
+	.login-body2 fieldset button i{margin:0}
+	.login-body2 fieldset button span{display:none}
+}
+@media all and (max-width:350px){
+	.login-body2 .tab .call li span,
+	.login-body2 .tab .call li div{float:none;clear:both}
+}
+
+@media all and (max-width:850px){
+	.login-box{width:auto}
+	.login-body2 .tab .call ul{padding-left:0;padding-right:0}
+	.login-body2 .tab .exp p{height:auto}
+	.login-body2 .login{width:auto;margin:0 5%!important}
+	.login-body2>.info{padding-left:15px;padding-right:15px}
+}
+@media all and (max-width:600px){
+	.login-body2 .tab li{width:100%;float:none}
+	.login-body2 .tab li a{margin:1px 0 0}
+	.login-body2 fieldset button i{margin:0}
+	.login-body2 fieldset button span{display:none}
+}
+@media all and (max-width:350px){
+	.login-body2 .tab .call li span,
+	.login-body2 .tab .call li div{float:none;clear:both}
+}
