@@ -1,5 +1,5 @@
 body {
- 
+ font-size: 16px;
 }
 
 #section-container {
@@ -35,11 +35,10 @@ body {
    
 }
 .section .lnb h2 {
-    margin-top: -179px;
+    margin-top: -175px;
     display: block;
     background : url("../images/myLib.png") no-repeat center center;
-    backgroundd-size: cover;
- 
+  
 }
 .section .lnb b {
     display: block;
@@ -139,6 +138,11 @@ table {
 }
 table,td,td {
     border-collapse: collapse;
+    text-align: center;
+}
+td {
+    padding : 5px;
+    border: 1px solid #e2e2e2;
 }
 
 .book-list th {

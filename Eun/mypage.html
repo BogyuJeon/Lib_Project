@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,17 +11,18 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/mypage.css">
 </head>
+
 <body>
 
-      <!-- 전체 헤더 영역 -->
-      <div id="wrap">
+    <!-- 전체 헤더 영역 -->
+    <div id="wrap">
         <!-- 헤더 영역 -->
         <header id="header">
             <div class="container">
 
                 <div class="left-util">
                     <ul>
-                        <li><a href="#">Library</a></li>
+                        <li><a href="/index.html">Library</a></li>
                     </ul>
                 </div>
 
@@ -30,155 +32,165 @@
                         <li> <a href="./signin.html">로그인</a></li>
                         <li> <a href="#">회원가입</a></li>
                         <!-- 내서재 클릭시 로그인 페이지 이동 -->
-                        <li><a href="#" class="lib">내 서재</a></li>
+                        <li><a href="/mypage.html" class="lib">내 서재</a></li>
                     </ul>
                     <!-- enf of right util -->
                 </div>
                 <!-- end of container -->
             </div>
 
-             <!-- 헤더 로고 영역 -->
-          <div class="header-logo">
-            <h1>
-                <a href="./index.html">
-                    <img src="" alt="">
-                </a>
-            </h1>
-        </div>
-        <!-- end -->
-
-        <!-- header nav 메뉴 -->
-        <div class="g-menu">
-            <ul class="navbar">
-                <li>
-                    <a href="#">
-                        <span>HOME</span>
+            <!-- 헤더 로고 영역 -->
+            <div class="header-logo">
+                <h1>
+                    <a href="./index.html">
+                        <img src="" alt="">
                     </a>
-                </li>
+                </h1>
+            </div>
+            <!-- end -->
 
-                <li>
-                    <a href="#">
-                        <span>Search</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <span>Book List</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <span>#</span>
-                    </a>
-                </li>
-            </ul>
-            <!-- end header-menu -->
-        </div>
-        <!-- end header-->
-    </header>
-    <!-- end conatiner -->
-
-    <div id = "section-container">
-        <div class="h-wrap"></div>
-        <div class = "section">
-            <div class = "lnb">
-                <h2>
-                    <b>내 서재</b>
-                </h2>
-    
-                <ul class="sub-menu">
-                    <li class = "active">
-                        <a href="#">
-                           <span>대출현황</span>
+            <!-- header nav 메뉴 -->
+            <div class="g-menu">
+                <ul class="navbar">
+                    <li>
+                        <a href="/index.html">
+                            <span>HOME</span>
                         </a>
-                       <ul>
-                        <li class = "active">
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>Search</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>Book List</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>#</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- end header-menu -->
+            </div>
+            <!-- end header-->
+        </header>
+        <!-- end conatiner -->
+
+        <div id="section-container">
+            <div class="h-wrap"></div>
+            <div class="section">
+                <div class="lnb">
+                    <h2>
+                        <b>내 서재</b>
+                    </h2>
+
+                    <ul class="sub-menu">
+                        <li class="active">
                             <a href="#">
-                                <span>대출중인 도서</span>
+                                <span>대출현황</span>
                             </a>
-                            
+                            <ul>
+                                <li class="active">
+                                    <a href="/mypage.html">
+                                        <span style="font-weight: bold;">대출중인 도서</span>
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <a href="mypage_history.html">
+                                        <span style="font-weight: bold;">대출이력</span>
+                                    </a>
+
+                                </li>
+                            </ul>
+
                         </li>
                         <li>
                             <a href="#">
-                                <span>대출이력</span>
+                                <span style="font-weight: bold;">회원정보 수정</span>
                             </a>
-                            
                         </li>
-                    </ul>
-    
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>회원정보 수정</span>
-                        </a>
-                    </li>
-                  
-                </ul>
-    
-                  <!-- end class lnb -->
-            </div>
 
-            <div class = "content">
-                <div class = "bor">
-                    <div class = "bor-head">
-                        <div class = "bor-title">
-                            <h3>대출중인 도서</h3>
+                    </ul>
+
+                    <!-- end class lnb -->
+                </div>
+
+                <div class="content">
+                    <div class="bor">
+                        <div class="bor-head">
+                            <div class="bor-title">
+                                <h3>대출중인 도서</h3>
+                            </div>
+                        </div>
+                        <div class="book-list">
+
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th style="width: 20%;">제목</th>
+                                        <th style="width: 20%;">도서관 명</th>
+                                        <th style="width: 20%;">지은이</th>
+                                        <th style="width: 20%;">출판사</th>
+                                    </tr>
+
+                                    <!-- td는 for문 돌려야함  -->
+                                    <tr>
+                                        <td>우아한 방어</td>
+                                        <td>부산도서관</td>
+                                        <td>지은이</td>
+                                        <td>부산시 출판사</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+
                         </div>
                     </div>
-                    <div class = "book-list">
-    
-                     <table>
-                        <tbody>
-                            <tr>
-                                <th style="width: 20%;">제목</th>
-                                <th style="width: 20%;">도서관 명</th>
-                                <th style="width: 20%;">지은이</th>
-                                <th style="width: 20%;">출판사</th>
-                            </tr>
-                        </tbody>
-                    </table>
-        
-        
-                    </div>
                 </div>
+
             </div>
 
+
         </div>
-
-
-    </div>
-</div>
-
-
- <!-- footer 영역 -->
- <footer>
-
-    <div class = "f-top">
-     <div class = "f-top-in">
-        <div class = "f-in-list">
-            <ul>
-                <li>
-                    <a href="#">이용약관</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>
-                            개인정보처리방침
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">저작권보호정책</a>
-                </li>
-            </ul>
-        </div>
-     </div>
     </div>
 
 
-</footer>
-    
+    <!-- footer 영역 -->
+    <footer>
+
+        <div class="f-top">
+            <div class="f-top-in">
+                <div class="f-in-list">
+                    <ul>
+                        <li>
+                            <a href="#">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    개인정보처리방침
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">저작권보호정책</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
 </body>
+
 </html>

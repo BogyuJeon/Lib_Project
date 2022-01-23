@@ -1,7 +1,9 @@
 body {
  
 }
-
+#container{
+ 
+}
 /* 이미지 콘텐츠 영역 */
 #h-container {
     /* 버튼 기준(부모) */
@@ -13,13 +15,13 @@ body {
 /* 지나가는 이미지 기준(부모) */
     position: relative;
     width: 100%;
-    height: 470px;
+    height: 670px;
     overflow: hidden;
 }
 .h-wrap ul li {
     position: absolute;
     width: 100%;
-    height: 470px;
+    height: 670px;
     font-size: 300px;
     top : 0;
 }
@@ -50,7 +52,7 @@ body {
 .h-btns {
     position: absolute;
     left: 50%;
-    top : 95%;
+    top : 132%;
 }
 .h-btns li {
     width: 10px;
@@ -155,7 +157,7 @@ body {
 
 /* section-group2 */
 .setion-group2 {
-    padding : 40px 0;
+    padding : 250px 0 60px 0;
 }
 .setion-group2 .sec-group {
 
@@ -192,6 +194,7 @@ body {
 .section-group3 {
     padding : 50px 0;
     background : url("../images/back.jpg")0 35% no-repeat ;
+    background-size: 100%;
 }
 
 .book-list-zone {
@@ -321,7 +324,7 @@ footer {
     z-index: 1000;
     right: 45px;
     bottom: 40px;
-    opacity: 1;
+    opacity: 0;
    
 }
 .f-bootom .btn-wrap > a {

@@ -9,8 +9,7 @@
     <title>내 서재</title>
     <link rel="shortcut icon" href="/image/icon.png">
     <link rel="stylesheet" href="/css/mypage.css">
-     <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/nav.css">
+
 </head>
 <body>
 
@@ -20,7 +19,7 @@
         <div class="g-menu">
             <ul class="navbar">
                 <li>
-                    <a href="#">
+                    <a href="/index">
                         <span>HOME</span>
                     </a>
                 </li>
@@ -64,13 +63,13 @@
                         </a>
                        <ul>
                         <li class = "active">
-                            <a href="#">
+                            <a href="/user/myLib">
                                 <span>대출중인 도서</span>
                             </a>
                             
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="/user/myhistory">
                                 <span>대출이력</span>
                             </a>
                             
@@ -106,6 +105,13 @@
                                 <th style="width: 20%;">지은이</th>
                                 <th style="width: 20%;">출판사</th>
                             </tr>
+                            
+                            <tr>
+                                <td>우아한 방어</td>
+                                <td>부산도서관</td>
+                                <td>지은이</td>
+                                <td>부산시 출판사</td>
+                           </tr>
                         </tbody>
                     </table>
         

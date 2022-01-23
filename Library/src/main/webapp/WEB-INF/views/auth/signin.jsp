@@ -25,9 +25,17 @@
             <div class="form-wrap">
               
                 <div class = "social-icons">
-                    <img src="/image/facebook.png" alt="facebook">
-                    <img src="/image/naver.png" alt="naver">
-                    <img src="/image/google.png" alt="google">
+                  <a href ="/oauth2/authorization/facebook">
+                  	 <img src="/image/facebook.png" alt="facebook">
+                  </a>
+                   <a href ="/oauth2/authorization/naver">
+                   	 <img src="/image/naver.png" alt="naver">
+                   </a>
+                   
+                   <a href ="/oauth2/authorization/google">
+                   	 <img src="/image/google.png" alt="google">	
+                   </a>
+                        
                 </div>
 
                 <form id="login" action="" class="input-group">
