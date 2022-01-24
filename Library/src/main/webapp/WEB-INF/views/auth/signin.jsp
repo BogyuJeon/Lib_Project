@@ -17,9 +17,31 @@
 
 <body>
 
-   <jsp:include page="../include/nav.jsp"></jsp:include>
+ <!-- 전체 헤더 영역 -->
+    <div id="container">
+        <!-- 헤더 영역 -->
+        <header id="header">
+            <div class="container">
 
-    
+                <div class="left-util">
+                    <ul>
+                        <li><a href="/">Library</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="right-util">
+                    <ul>
+                    	<li class = "sign-in"><a href="/auth/signin">로그인</a></li>
+                      	<li> <a href="#">회원가입</a></li>
+                       	<!-- 내서재 클릭시 로그인 페이지 이동 -->
+                      	<li><a href="/user/myLib" class="lib">내 서재</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>
+   
       <section>
         <div class="wrap">
             <div class="form-wrap">

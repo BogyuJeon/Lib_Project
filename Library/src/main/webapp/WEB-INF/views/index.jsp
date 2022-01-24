@@ -22,40 +22,7 @@
 
   	   <jsp:include page="./include/nav.jsp"></jsp:include>
 	
-            <!-- header nav 메뉴 -->
-            <div class="g-menu">
-                <ul class="navbar">
-                    <li>
-                        <a href="#">
-                            <span>HOME</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <span>Search</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <span>Book List</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <span>#</span>
-                        </a>
-                    </li>
-                </ul>
-                <!-- end header-menu -->
-            </div>
-            <!-- end header-->
-        </header>
-        <!-- end conatiner -->
-    </div>
-
+         
     <!-- group1 영역 -->
     <section class="setion-group1">
         <div id="h-container">
@@ -140,7 +107,7 @@
             </ul>
 
             <!-- book-img -->
-            <div class="book-image">
+             <div id = "book-sug" class="book-image" style = "display: block;">
 
                 <ul class = "book-image-list" style = >    
                     <li>
@@ -187,6 +154,155 @@
                 </ul>
 
             </div>
+
+            <div id = "book-best" class="book-image" style = "display: none;">
+
+                <ul class = "book-image-list" style = >    
+                    <li>
+                        <span class = "cov">
+                            <a href="#">
+                                <img src="https://bookthumb-phinf.pstatic.net/cover/144/122/14412268.jpg" alt="">
+                            </a>
+                        </span>
+                        <span class = "txt">우아한 방어 : 우리 몸을 지키는 면역의 놀라운 비밀</span>
+                    </li>
+                        <li>
+                            <span class="cov">
+                                <a href="#">
+                                    <img src="https://bookthumb-phinf.pstatic.net/cover/144/122/14412268.jpg" alt="">
+                                </a>
+                            </span>
+                            <span class="txt">우아한 방어 : 우리 몸을 지키는 면역의 놀라운 비밀</span>
+                        </li>
+                        <li>
+                            <span class="cov">
+                                <a href="#">
+                                    <img src="https://bookthumb-phinf.pstatic.net/cover/144/122/14412268.jpg" alt="">
+                                </a>
+                            </span>
+                            <span class="txt">우아한 방어 : 우리 몸을 지키는 면역의 놀라운 비밀</span>
+                        </li>
+                        <li>
+                            <span class="cov">
+                                <a href="#">
+                                    <img src="https://bookthumb-phinf.pstatic.net/cover/144/122/14412268.jpg" alt="">
+                                </a>
+                            </span>
+                            <span class="txt">우아한 방어 : 우리 몸을 지키는 면역의 놀라운 비밀</span>
+                        </li>
+                        <li>
+                            <span class="cov">
+                                <a href="#">
+                                    <img src="https://bookthumb-phinf.pstatic.net/cover/144/122/14412268.jpg" alt="">
+                                </a>
+                            </span>
+                            <span class="txt">우아한 방어 : 우리 몸을 지키는 면역의 놀라운 비밀</span>
+                        </li>
+
+                </ul>
+
+            </div>
+
+            <div id = "book-best-pop" class="book-image" style = "display: none;">
+            
+                <ul class="book-image-list" style=>
+                    <li>
+                        <span class="cov">
+                            <a href="#">
+                                <img src="https://bookthumb-phinf.pstatic.net/cover/164/291/16429192.jpg" alt="">
+                            </a>
+                        </span>
+                        <span class="txt">우아한 방어 : 우리 몸을 지키는 면역의 놀라운 비밀</span>
+                    </li>
+                    <li>
+                        <span class="cov">
+                            <a href="#">
+                                <img src="https://bookthumb-phinf.pstatic.net/cover/164/291/16429192.jpg" alt="">
+                            </a>
+                        </span>
+                        <span class="txt">우아한 방어 : 우리 몸을 지키는 면역의 놀라운 비밀</span>
+                    </li>
+                    <li>
+                        <span class="cov">
+                            <a href="#">
+                                <img src="https://bookthumb-phinf.pstatic.net/cover/164/291/16429192.jpg" alt="">
+                            </a>
+                        </span>
+                        <span class="txt">우아한 방어 : 우리 몸을 지키는 면역의 놀라운 비밀</span>
+                    </li>
+                    <li>
+                        <span class="cov">
+                            <a href="#">
+                                <img src="https://bookthumb-phinf.pstatic.net/cover/164/291/16429192.jpg" alt="">
+                            </a>
+                        </span>
+                        <span class="txt">우아한 방어 : 우리 몸을 지키는 면역의 놀라운 비밀</span>
+                    </li>
+                    <li>
+                        <span class="cov">
+                            <a href="#">
+                                <img src="https://bookthumb-phinf.pstatic.net/cover/164/291/16429192.jpg" alt="">
+                            </a>
+                        </span>
+                        <span class="txt">우아한 방어 : 우리 몸을 지키는 면역의 놀라운 비밀</span>
+                    </li>
+            
+                </ul>
+            
+            </div>
+
+            <div id="book-top" class="book-image" style = "display: none;">
+            
+                <ul class="book-image-list" style=>
+                    <li>
+                        <span class="cov">
+                            <a href="#">
+                                <img src="https://bookthumb-phinf.pstatic.net/cover/156/192/15619225.jpg" alt="">
+                            </a>
+                        </span>
+                        <span class="txt">우아한 방어 : 우리 몸을 지키는 면역의 놀라운 비밀</span>
+                    </li>
+                    <li>
+                        <span class="cov">
+                            <a href="#">
+                                <img src="https://bookthumb-phinf.pstatic.net/cover/156/192/15619225.jpg" alt="">
+                            </a>
+                        </span>
+                        <span class="txt">우아한 방어 : 우리 몸을 지키는 면역의 놀라운 비밀</span>
+                    </li>
+                    <li>
+                        <span class="cov">
+                            <a href="#">
+                                <img src="https://bookthumb-phinf.pstatic.net/cover/156/192/15619225.jpg" alt="">
+                            </a>
+                        </span>
+                        <span class="txt">우아한 방어 : 우리 몸을 지키는 면역의 놀라운 비밀</span>
+                    </li>
+                    <li>
+                        <span class="cov">
+                            <a href="#">
+                                <img src="https://bookthumb-phinf.pstatic.net/cover/156/192/15619225.jpg" alt="">
+                            </a>
+                        </span>
+                        <span class="txt">우아한 방어 : 우리 몸을 지키는 면역의 놀라운 비밀</span>
+                    </li>
+                    <li>
+                        <span class="cov">
+                            <a href="#">
+                                <img src="https://bookthumb-phinf.pstatic.net/cover/156/192/15619225.jpg" alt="">
+                            </a>
+                        </span>
+                        <span class="txt">우아한 방어 : 우리 몸을 지키는 면역의 놀라운 비밀</span>
+                    </li>
+            
+                </ul>
+            
+            </div>
+            
+            
+            
+            
+            
             <!-- book-img-end -->
 
 

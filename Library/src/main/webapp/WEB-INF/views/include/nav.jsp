@@ -16,7 +16,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>상단 NAV 페이지 입니다.</title>
+    <title></title>
     <link rel="shortcut icon" href="/Eunchong/images/book-icon.png">
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/base.css">
@@ -24,7 +24,7 @@
 
 <body>
 
-    <!-- 전체 헤더 영역 -->
+
     <div id="container">
         <!-- 헤더 영역 -->
         <header id="header">
@@ -54,18 +54,44 @@
                     	</c:otherwise>
                     
                     </c:choose>
-                        
-                    
                     </ul>
-                    <!-- enf of right util -->
                 </div>
-                <!-- end of container -->
             </div>
+        </header>
+         <!-- header nav 메뉴 -->
+            <div class="g-menu">
+                <ul class="navbar">
+                    <li>
+                        <a href="#">
+                            <span>HOME</span>
+                        </a>
+                    </li>
 
-          
+                    <li>
+                        <a href="#">
+                            <span>Search</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>Book List</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>#</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- end header-menu -->
+            </div>
+            <!-- end header-->
         </header>
         <!-- end conatiner -->
     </div>
+   </div>
 
 
 

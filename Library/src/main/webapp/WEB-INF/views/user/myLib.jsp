@@ -15,38 +15,7 @@
 
       <jsp:include page="../include/nav.jsp"></jsp:include>
 	
-        <!-- header nav 메뉴 -->
-        <div class="g-menu">
-            <ul class="navbar">
-                <li>
-                    <a href="/index">
-                        <span>HOME</span>
-                    </a>
-                </li>
 
-                <li>
-                    <a href="#">
-                        <span>Search</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <span>Book List</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <span>#</span>
-                    </a>
-                </li>
-            </ul>
-            <!-- end header-menu -->
-        </div>
-        <!-- end header-->
-    </header>
-    <!-- end conatiner -->
 
     <div id = "section-container">
         <div class="h-wrap"></div>
@@ -70,7 +39,7 @@
                         </li>
                         <li>
                             <a href="/user/myhistory">
-                                <span>대출이력</span>
+                                <span style = "font-weight : bold">대출이력</span>
                             </a>
                             
                         </li>

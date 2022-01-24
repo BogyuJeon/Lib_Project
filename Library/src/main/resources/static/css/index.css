@@ -218,9 +218,9 @@ body {
     color : #000;
 }
 .book-list-zone .book-list > li.on a{
-    color: #cf3131;
- 
- 
+    color: #4972bc;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #4661b9;
 }
 
 .book-image {

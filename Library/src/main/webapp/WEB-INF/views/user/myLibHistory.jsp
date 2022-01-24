@@ -69,49 +69,6 @@
 
    <jsp:include page="../include/nav.jsp"></jsp:include>
    
-            <!-- 헤더 로고 영역 -->
-            <div class="header-logo">
-                <h1>
-                    <a href="./index.html">
-                        <img src="" alt="">
-                    </a>
-                </h1>
-            </div>
-            <!-- end -->
-
-            <!-- header nav 메뉴 -->
-            <div class="g-menu">
-                <ul class="navbar">
-                    <li>
-                        <a href="/index">
-                            <span>HOME</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <span>Search</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <span>Book List</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <span>#</span>
-                        </a>
-                    </li>
-                </ul>
-                <!-- end header-menu -->
-            </div>
-            <!-- end header-->
-        </header>
-        <!-- end conatiner -->
-
         <div id="section-container">
             <div class="h-wrap"></div>
             <div class="section">

@@ -220,19 +220,20 @@ body {
     color : #000;
 }
 .book-list-zone .book-list > li.on a{
-    color: #cf3131;
- 
- 
+    color: #4972bc;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #4661b9;
 }
+
 
 .book-image {
     padding : 5px 20px;
+    display: none;
 
 }
 .book-image .book-image-list {
     display: flex;
-    flex-wrap: wrap;
-   
+    flex-wrap: wrap;  
 }
 .book-image .book-image-list li {
     float: left;
