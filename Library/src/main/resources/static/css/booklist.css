@@ -13,7 +13,7 @@ body {
     position: relative;
     width: 100%;
     height: 180px;
-    background: url("../images/lib01.jpg") no-repeat 50%;
+    background: url("/image/lib01.jpg") no-repeat 50%;
     background-size: 100%;
 }
 .h-wrap img {
@@ -36,7 +36,7 @@ body {
 .section .lnb h2 {
     margin-top: -190px;
     display: block;
-    background : url("../images/myLib.png") no-repeat center center;
+    background : url("/image/myLib.png") no-repeat center center;
   
 }
 .section .lnb b {
@@ -110,7 +110,7 @@ body {
     margin: 15px auto;
 }
 
-/* ì±…ì •ë³´ ì¶œë ¥í•˜ëŠ”ê³µê°„ */
+/* Ã¥Á¤º¸ Ãâ·ÂÇÏ´Â°ø°£ */
 .sub {
     width: 550px;
     height: 150px;

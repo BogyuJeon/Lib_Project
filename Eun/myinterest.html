@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="./images/icon.png">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/mypage.css">
+    <link rel="stylesheet" href="css/myinterest.css">
 </head>
 
 <body>
@@ -87,7 +87,7 @@
             <div class="section">
                 <div class="lnb">
                     <h2>
-                        <b>내 서재</b>
+                        <b>나의 관심 도서 목록</b>
                     </h2>
 
                     <ul class="sub-menu">
@@ -98,7 +98,7 @@
                             <ul>
                                 <li class="active">
                                     <a href="/mypage.html">
-                                        <span style="font-weight:bold;">대출중인 도서</span>
+                                        <span style="font-weight: bold; color : #4c4c4c;">대출중인 도서</span>
                                     </a>
 
                                 </li>
@@ -117,8 +117,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/myinterest.html">
-                                <span style="font-weight: bold;">나의 관심 도서</span>
+                            <a href="#">
+                                <span style="font-weight: bold; color : #003b9d">나의 관심 도서</span>
                             </a>
                         </li>
 
@@ -131,33 +131,36 @@
                     <div class="bor">
                         <div class="bor-head">
                             <div class="bor-title">
-                                <h3>대출중인 도서</h3>
+                                <h3>관심등록한 책 리스트를 확인하세요.</h3>
                             </div>
                         </div>
-                        <div class="book-list">
-
+                        <div class="my-inter-list">
                             <table>
-                                <tbody>
-                                    <tr>
-                                        <th style="width: 20%;">제목</th>
-                                        <th style="width: 20%;">도서관 명</th>
-                                        <th style="width: 20%;">지은이</th>
-                                        <th style="width: 20%;">출판사</th>
-                                    </tr>
-
-                                    <!-- td는 for문 돌려야함  -->
-                                    <tr>
-                                        <td>우아한 방어</td>
-                                        <td>부산도서관</td>
-                                        <td>지은이</td>
-                                        <td>부산시 출판사</td>
-                                    </tr>
-
-                                </tbody>
+                                <th>번호</th>
+                                <th>책 코드</th>
+                                <th>자료실</th>
+                                <th>책이름</th>
+                                <th>지은이</th>
+                                <th>출판사</th>
                             </table>
+                        </div>
+                        <div class = "my-inter-in">
+                            <table>
+                                <tr>
+                                  <td>등록된 데이터가 없습니다</td>       
+                                </tr>
+                            </table>
+                        </div>
 
+                        <div class = "border-num">
+                            <span>
+                                <a href="#">
+                                    1
+                                </a>
+                            </span>
 
                         </div>
+                        
                     </div>
                 </div>
 

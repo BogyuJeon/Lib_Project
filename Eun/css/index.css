@@ -213,7 +213,7 @@ body {
 }
 .book-list-zone .book-list > li {
     float: left;
-    font-size: 1.8rem;
+    font-size: 25px;
     padding : 14.2px;
 }
 .book-list-zone .book-list > li > a{

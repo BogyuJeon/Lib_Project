@@ -62,7 +62,7 @@
             <div class="g-menu">
                 <ul class="navbar">
                     <li>
-                        <a href="#">
+                        <a href="/index">
                             <span>HOME</span>
                         </a>
                     </li>
@@ -74,7 +74,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="/book/booklist">
                             <span>Book List</span>
                         </a>
                     </li>

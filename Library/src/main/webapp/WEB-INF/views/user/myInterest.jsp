@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+    
+    
+    
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,72 +13,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>내 서재</title>
     <link rel="shortcut icon" href="/image/icon.png">
-    <link rel="stylesheet" href="/css/mypage.css">
+    <link rel="stylesheet" href="/css/myinterest.css">
 </head>
-
-<style>
-    body {
-        font-size: 16px;
-    }
-
-    .book-date {
-        padding: 20px;
-        text-align: center;
-        border: 1px solid #eaeaea;
-        border-top: 2px solid #000;
-        margin-bottom: 10px;
-
-    }
-
-    input {
-        width: 200px;
-        height: 30px;
-        border-radius: 4px;
-        border: 1px solid #c9c9c9;
-        padding: 4px;
-        font-size: 14px;
-        font-weight: bold;
-    }
-
-    .book-show-info {
-        border-top: 1px solid #ddd;
-        color: #000;
-        padding: 22px 0 10px 28px;
-    }
-
-    .btn {
-        width: 50px;
-        display: inline-block;
-        border: 1px solid #d5d5d5;
-        color: #000;
-        margin-left: 10px;
-        padding: 9px;
-        cursor: pointer;
-        border-radius: 6px;
-        background-color: #f9f9f9;
-    }
-
-    .btn:hover {
-        background-color: #f2f2f2;
-        border: 1px solid #ccc;
-
-    }
-
-    label {
-        font-weight: bold;
-    }
-</style>
 
 <body>
 
-   <jsp:include page="../include/nav.jsp"></jsp:include>
    
+	 <jsp:include page="../include/nav.jsp"></jsp:include>
+	
         <div id="section-container">
             <div class="h-wrap"></div>
             <div class="section">
                 <div class="lnb">
                     <h2>
-                        <b>대출 이력</b>
+                        <b>나의 관심 도서 목록</b>
                     </h2>
 
                     <ul class="sub-menu">
@@ -85,13 +37,13 @@
                             <ul>
                                 <li class="active">
                                     <a href="/user/myLib">
-                                        <span style="color : #4c4c4c">대출중인 도서</span>
+                                        <span style="font-weight: bold; color : #4c4c4c;">대출중인 도서</span>
                                     </a>
 
                                 </li>
                                 <li>
                                     <a href="/user/myhistory">
-                                        <span style="color : #003b9d;font-weight: bold;">대출이력</span>
+                                        <span style="font-weight: bold;">대출이력</span>
                                     </a>
 
                                 </li>
@@ -100,16 +52,14 @@
                         </li>
                         <li>
                             <a href="#">
-                                <span>회원정보 수정</span>
+                                <span style="font-weight: bold;">회원정보 수정</span>
                             </a>
                         </li>
-                         <li>
-                          <a href="/user/myinter">
-                             <span style="font-weight: bold;">나의 관심 도서</span>
-                          </a>
-                     </li>
-                        
-                        
+                        <li>
+                            <a href="/user/myinter">
+                                <span style="font-weight: bold; color : #003b9d">나의 관심 도서</span>
+                            </a>
+                        </li>
 
                     </ul>
 
@@ -120,23 +70,36 @@
                     <div class="bor">
                         <div class="bor-head">
                             <div class="bor-title">
-                                <h3>대출 이력 조회</h3>
+                                <h3>관심등록한 책 리스트를 확인하세요.</h3>
                             </div>
                         </div>
-                        <div class="book-date">
-                            <label for="start_date">시작일</label>
-                            <input type="date" name="start_date" value="">
-                            ~
-                            <label for="end_date">종료일</label>
-                            <input type="date" name="end_date" value="">
-                            <a href="#" class="btn">검색</a>
-
+                        <div class="my-inter-list">
+                            <table>
+                                <th>번호</th>
+                                <th>책 코드</th>
+                                <th>자료실</th>
+                                <th>책이름</th>
+                                <th>지은이</th>
+                                <th>출판사</th>
+                            </table>
+                        </div>
+                        <div class = "my-inter-in">
+                            <table>
+                                <tr>
+                                  <td>등록된 데이터가 없습니다</td>       
+                                </tr>
+                            </table>
                         </div>
 
-                        <div class="book-show-info">
-                            <!-- 조회목록 출력하는 곳 -->
-                            <h3 style = "font-size : 20px">조회된 대출 정보가 없습니다.</h3>
+                        <div class = "border-num">
+                            <span>
+                                <a href="#">
+                                    1
+                                </a>
+                            </span>
+
                         </div>
+                        
                     </div>
                 </div>
 

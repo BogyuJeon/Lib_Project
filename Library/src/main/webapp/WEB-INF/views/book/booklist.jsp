@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,78 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>내 서재</title>
-    <link rel="shortcut icon" href="./images/icon.png">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/booklist.css">
+    <link rel="shortcut icon" href="/image/icon.png">
+    <link rel="stylesheet" href="/css/booklist.css">
 </head>
 
 <body>
 
-    <!-- 전체 헤더 영역 -->
-    <div id="wrap">
-        <!-- 헤더 영역 -->
-        <header id="header">
-            <div class="container">
-
-                <div class="left-util">
-                    <ul>
-                        <li><a href="/index.html">Library</a></li>
-                    </ul>
-                </div>
-
-
-                <div class="right-util">
-                    <ul>
-                        <li> <a href="./signin.html">로그인</a></li>
-                        <li> <a href="#">회원가입</a></li>
-                        <!-- 내서재 클릭시 로그인 페이지 이동 -->
-                        <li><a href="/mypage.html" class="lib">내 서재</a></li>
-                    </ul>
-                    <!-- enf of right util -->
-                </div>
-                <!-- end of container -->
-            </div>
-
-            <!-- 헤더 로고 영역 -->
-            <div class="header-logo">
-                <h1>
-                    <a href="./index.html">
-                        <img src="" alt="">
-                    </a>
-                </h1>
-            </div>
-            <!-- end -->
-
-            <!-- header nav 메뉴 -->
-            <div class="g-menu">
-                <ul class="navbar">
-                    <li>
-                        <a href="/index.html">
-                            <span>HOME</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <span>Search</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <span>Book List</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <span>#</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </header>
+   
+		<jsp:include page="../include/nav.jsp"></jsp:include>
 
         <!-- book-list -->
         <div id="section-container">

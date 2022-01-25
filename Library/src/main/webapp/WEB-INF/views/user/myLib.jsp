@@ -51,6 +51,11 @@
                             <span>회원정보 수정</span>
                         </a>
                     </li>
+                     <li>
+                          <a href="/user/myinter">
+                             <span style="font-weight: bold;">나의 관심 도서</span>
+                          </a>
+                     </li>
                   
                 </ul>
     

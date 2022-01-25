@@ -31,6 +31,16 @@ public class PageController {
 		return "user/myLibHistory";
 	}
 	
+	@GetMapping("/book/booklist")
+	public String WrapBookListForm() {
+		return "/book/booklist";
+	}
+	
+	@GetMapping("/user/myinter")
+	public String myInterFrom() {
+		return "/user/myInterest";
+	}
+	
 
 	
 }	
