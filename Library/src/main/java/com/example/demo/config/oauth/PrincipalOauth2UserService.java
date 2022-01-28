@@ -44,6 +44,8 @@ public class PrincipalOauth2UserService extends DefaultOAuth2UserService{
 			providerId = (String)oAuth2UserAttributes.get("id");
 		}else if(provider.equals("google")) {
 			providerId = (String)oAuth2UserAttributes.get("sub");
+		}else if(provider.equals("facebook")) {
+			providerId = (String)oAuth2UserAttributes.get("id");
 		}
 		
 		else {
