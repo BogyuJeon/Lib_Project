@@ -41,6 +41,11 @@ public class PageController {
 		return "/user/myInterest";
 	}
 	
+	@GetMapping("/book-search")
+	public String searchForm() {
+		return "/book/search";
+	}
+	
 
 	
 }	

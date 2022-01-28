@@ -33,13 +33,13 @@
                 <div class="main1">
                     <div class="section">
                         <div class="latter-check">
-                            <div class="in-latter-check">
+                        	  <div class="in-latter-check">
                                 <label class="check-la"><input ' type="checkbox" class="in-check">단어 포함
                                                                     검색</label>
                             </div>
                         </div>
                         <div class="title-box">
-                            <form action="">
+                            <form action="/book-search" method="get">
                                 <label for="" class="in-la"></label>
                                 <input type="" placeholder="도서명 또는 저자를 검색하세요" class="in-search">
                                 <button>검색</button>
