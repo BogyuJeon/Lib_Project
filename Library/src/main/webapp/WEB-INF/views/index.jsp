@@ -9,12 +9,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta HTTP-EQUIV="refresh" CONTENT="70">
     <title>도서관 index페이지</title>
     <link rel="shortcut icon" href="/image/icon.png">
     <link rel="stylesheet" href="/css/index.css">
     <script src="/js/jquery.js"></script>
     <script src="/js/index.js"></script>
     <script src="/js/tab.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
+        integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF"
+        crossorigin="anonymous"></script>
+        
+          <script>
+        $(document).ready(function () {
+            let weatherIcon = {
+                '01': 'fas fa-sun',
+                '02': 'fas fa-cloud-sun',
+                '03': 'fas fa-cloud',
+                '04': 'fas fa-cloud-meatball',
+                '09': 'fas fa-cloud-sun-rain',
+                '10': 'fas fa-cloud-showers-heavy',
+                '11': 'fas fa-poo-storm',
+                '13': 'far fa-snowflake',
+                '50': 'fas fa-smog'
+            };
+            $.ajax({
+                url: 'http://api.openweathermap.org/data/2.5/weather?q=Busan&APPID=010c240fc719ffe978fff69e8cda76d8&units=metric',
+                dataType: 'json',
+                type: 'GET',
+                success: function (data) {
+                    var $Icon = (data.weather[0].icon).substr(0, 2);
+                    var $Temp = Math.floor(data.main.temp) + '℃';
+                    var $city = data.name;
+                    $('.Curricon').append('<i class="' + weatherIcon[$Icon] + '"></i>');
+                    $('.CurrTemp').prepend($Temp);
+                    $('.City').append($city);
+                }
+            })
+        });
+    </script>
 
 </head>
 
@@ -39,9 +72,9 @@
                             </div>
                         </div>
                         <div class="title-box">
-                            <form action="/book-search" method="get">
+                            <form action="/book-search" method="post">
                                 <label for="" class="in-la"></label>
-                                <input type="" placeholder="도서명 또는 저자를 검색하세요" class="in-search">
+                                <input name = "bookName" type="text" placeholder="도서명 또는 저자를 검색하세요" class="in-search">
                                 <button>검색</button>
                             </form>
                         </div>
@@ -81,11 +114,53 @@
     <!-- group2 영역   -->
     <section class = "setion-group2">
         <div class="sec-group">
-            <div class="content1"></div>
-            <div class="content2"></div>
-            <div class="content3"></div>
+           <div class="content1">
+                <div class="calendar">
+                    <div class="cal_in">
+                        <button class="calendar_btn" onclick="prevCal();">&lt;</button>
+                    <div class="title">
+                        <span class = "year"></span>
+                        <span class="month"></span>
+                    </div>
+                    <button class = "calendar_btn" onclick="nextCal();">&gt;</button>
+                   </div>
+               
+                <div class="day">
+                    <div>S</div>
+                    <div>M</div>
+                    <div>T</div>
+                    <div>W</div>
+                    <div>T</div>
+                    <div>F</div>
+                    <div>S</div>
+                </div>
+                <div class="dates"></div>
+           </div>
         </div>
+
+
+         <div class="content2">
+            <div class="weather">
+                    <div class="Curricon"></div>
+            </div>
+         
+                <div class="CurrTemp"></div>
+                <div class="City"></div>
+         
+        </div>
+
+             <div class="content3">
+                 <div class="time-wrap">
+                    <h2>현재 시간</h2>
+                 </div>
+                    <div id="Clock" class="clock">
+                 </div>
+             </div>
+         </div>
+
+
     </section>
+
 
      
     <!-- group3 영역   -->
@@ -355,5 +430,7 @@
 
     
 </body>
+
+<script src="/js/indexCalendar.js"></script>
 
 </html>

@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,14 +11,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>내 서재</title>
-    <link rel="shortcut icon" href="/image/icon.png">
+    <link rel="shortcut icon" href="./images/icon.png">
     <link rel="stylesheet" href="/css/booklist.css">
 </head>
 
 <body>
 
-   
-		<jsp:include page="../include/nav.jsp"></jsp:include>
+   		<jsp:include page="../include/nav.jsp"></jsp:include>
 
         <!-- book-list -->
         <div id="section-container">
@@ -27,286 +29,73 @@
                     </h2>
                 </div>
             </div>
-            <div class = "bok-info">
+            <div class="bok-info">
                 <div class="bok-in">
                     <h2>검색가능한 책 목록</h2>
                 </div>
             </div>
-            <div class = "show-book">
-                <div class = "show-book-in">
+            <div class="show-book">
+                <div class="show-book-in">
                     <h3>초성으로 검색하기</h3>
                 </div>
-                <div class = "con-search">
-                   <div>ㄱ</div>
-                   <div>ㄴ</div>
-                   <div>ㄷ</div>
-                   <div>ㄹ</div>
-                   <div>ㅁ</div>
-                   <div>ㅂ</div>
-                   <div>ㅅ</div>
-                   <div>ㅇ</div>
-                   <div>ㅈ</div>
-                   <div>ㅊ</div>
-                   <div>ㅋ</div>
-                   <div>ㅌ</div>
-                   <div>ㅍ</div>
-                   <div>ㅎ</div>
+                <div class="con-search">
+                    <div>ㄱ</div>
+                    <div>ㄴ</div>
+                    <div>ㄷ</div>
+                    <div>ㄹ</div>
+                    <div>ㅁ</div>
+                    <div>ㅂ</div>
+                    <div>ㅅ</div>
+                    <div>ㅇ</div>
+                    <div>ㅈ</div>
+                    <div>ㅊ</div>
+                    <div>ㅋ</div>
+                    <div>ㅌ</div>
+                    <div>ㅍ</div>
+                    <div>ㅎ</div>
                 </div>
 
-                <div class = "con-book-list">
-                    <div class = "sub">
-                        <div class ="sub-left">
+                <div class="con-book-list">
+                	<c:forEach var = "book" items = "${b }">
+                    <div class="sub">
+                        <div class="sub-left">
                             <a href="#">
                                 <img src="https://image.aladin.co.kr/product/26987/37/cover/k962730610_1.jpg" alt="">
                             </a>
                         </div>
-                        <div class = "sub-box-left">
-                            <div class = "sub-item">
-                                <div class ="clip">
+                        <div class="sub-box-left">
+                            <div class="sub-item">
+                                <div class="clip">
                                     <a href="#">
-                                        <span class = "text">월급쟁이의 첫 부동산공부 (500만원으로 50억 자산을 만든 소액 투자 비법)</span>
+                                        <span class="text">${book.BOOK_NAME }</span>
                                     </a>
-                                    <p>지은이 : 김탁환</p>
-                                    <p>출판사 : 해냄출판사</p>
-                                    <p>출판년도 : 2019</p>
-                                    <p>도서관 : 구축도서관</p>
+                                    <p>지은이 : ${ book.AUTHOR}</p>
+                                    <p>출판사 : ${book.PUBLISHER}</p>
+                                    <p>출판년도 :${ book.YR_PUBLICATION }</p>
+                                    <p>도서관 : ${ book.REF_ROOM } </p>
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                    <div class = "sub">
-                        <div class ="sub-left">
-                            <a href="#">
-                                <img src="https://image.aladin.co.kr/product/26987/37/cover/k962730610_1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class = "sub-box-left">
-                            <div class = "sub-item">
-                                <div class ="clip">
-                                    <a href="#">
-                                        <span class = "text">월급쟁이의 첫 부동산공부 (500만원으로 50억 자산을 만든 소액 투자 비법)</span>
-                                    </a>
-                                    <p>지은이 : 김탁환</p>
-                                    <p>출판사 : 해냄출판사</p>
-                                    <p>출판년도 : 2019</p>
-                                    <p>도서관 : 구축도서관</p>
-                                </div>
-                            </div>
-                        </div>
-                     </div>
+                    </c:forEach>
 
-                     <div class = "sub">
-                        <div class ="sub-left">
-                            <a href="#">
-                                <img src="https://image.aladin.co.kr/product/26987/37/cover/k962730610_1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class = "sub-box-left">
-                            <div class = "sub-item">
-                                <div class ="clip">
-                                    <a href="#">
-                                        <span class = "text">월급쟁이의 첫 부동산공부 (500만원으로 50억 자산을 만든 소액 투자 비법)</span>
-                                    </a>
-                                    <p>지은이 : 김탁환</p>
-                                    <p>출판사 : 해냄출판사</p>
-                                    <p>출판년도 : 2019</p>
-                                    <p>도서관 : 구축도서관</p>
-                                </div>
-                            </div>
-                        </div>
-                     </div>
-
-                     <div class = "sub">
-                        <div class ="sub-left">
-                            <a href="#">
-                                <img src="https://image.aladin.co.kr/product/26987/37/cover/k962730610_1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class = "sub-box-left">
-                            <div class = "sub-item">
-                                <div class ="clip">
-                                    <a href="#">
-                                        <span class = "text">월급쟁이의 첫 부동산공부 (500만원으로 50억 자산을 만든 소액 투자 비법)</span>
-                                    </a>
-                                    <p>지은이 : 김탁환</p>
-                                    <p>출판사 : 해냄출판사</p>
-                                    <p>출판년도 : 2019</p>
-                                    <p>도서관 : 구축도서관</p>
-                                </div>
-                            </div>
-                        </div>
-                     </div>
-
-                     <div class = "sub">
-                        <div class ="sub-left">
-                            <a href="#">
-                                <img src="https://image.aladin.co.kr/product/26987/37/cover/k962730610_1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class = "sub-box-left">
-                            <div class = "sub-item">
-                                <div class ="clip">
-                                    <a href="#">
-                                        <span class = "text">월급쟁이의 첫 부동산공부 (500만원으로 50억 자산을 만든 소액 투자 비법)</span>
-                                    </a>
-                                    <p>지은이 : 김탁환</p>
-                                    <p>출판사 : 해냄출판사</p>
-                                    <p>출판년도 : 2019</p>
-                                    <p>도서관 : 구축도서관</p>
-                                </div>
-                            </div>
-                        </div>
-                     </div>
-
-                     <div class = "sub">
-                        <div class ="sub-left">
-                            <a href="#">
-                                <img src="https://image.aladin.co.kr/product/26987/37/cover/k962730610_1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class = "sub-box-left">
-                            <div class = "sub-item">
-                                <div class ="clip">
-                                    <a href="#">
-                                        <span class = "text">월급쟁이의 첫 부동산공부 (500만원으로 50억 자산을 만든 소액 투자 비법)</span>
-                                    </a>
-                                    <p>지은이 : 김탁환</p>
-                                    <p>출판사 : 해냄출판사</p>
-                                    <p>출판년도 : 2019</p>
-                                    <p>도서관 : 구축도서관</p>
-                                </div>
-                            </div>
-                        </div>
-                     </div>
-
-                     <div class = "sub">
-                        <div class ="sub-left">
-                            <a href="#">
-                                <img src="https://image.aladin.co.kr/product/26987/37/cover/k962730610_1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class = "sub-box-left">
-                            <div class = "sub-item">
-                                <div class ="clip">
-                                    <a href="#">
-                                        <span class = "text">월급쟁이의 첫 부동산공부 (500만원으로 50억 자산을 만든 소액 투자 비법)</span>
-                                    </a>
-                                    <p>지은이 : 김탁환</p>
-                                    <p>출판사 : 해냄출판사</p>
-                                    <p>출판년도 : 2019</p>
-                                    <p>도서관 : 구축도서관</p>
-                                </div>
-                            </div>
-                        </div>
-                     </div>
-                     <div class = "sub">
-                        <div class ="sub-left">
-                            <a href="#">
-                                <img src="https://image.aladin.co.kr/product/26987/37/cover/k962730610_1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class = "sub-box-left">
-                            <div class = "sub-item">
-                                <div class ="clip">
-                                    <a href="#">
-                                        <span class = "text">월급쟁이의 첫 부동산공부 (500만원으로 50억 자산을 만든 소액 투자 비법)</span>
-                                    </a>
-                                    <p>지은이 : 김탁환</p>
-                                    <p>출판사 : 해냄출판사</p>
-                                    <p>출판년도 : 2019</p>
-                                    <p>도서관 : 구축도서관</p>
-                                </div>
-                            </div>
-                        </div>
-                     </div>
-                     <div class = "sub">
-                        <div class ="sub-left">
-                            <a href="#">
-                                <img src="https://image.aladin.co.kr/product/26987/37/cover/k962730610_1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class = "sub-box-left">
-                            <div class = "sub-item">
-                                <div class ="clip">
-                                    <a href="#">
-                                        <span class = "text">월급쟁이의 첫 부동산공부 (500만원으로 50억 자산을 만든 소액 투자 비법)</span>
-                                    </a>
-                                    <p>지은이 : 김탁환</p>
-                                    <p>출판사 : 해냄출판사</p>
-                                    <p>출판년도 : 2019</p>
-                                    <p>도서관 : 구축도서관</p>
-                                </div>
-                            </div>
-                        </div>
-                     </div>
-                     <div class = "sub">
-                        <div class ="sub-left">
-                            <a href="#">
-                                <img src="https://image.aladin.co.kr/product/26987/37/cover/k962730610_1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class = "sub-box-left">
-                            <div class = "sub-item">
-                                <div class ="clip">
-                                    <a href="#">
-                                        <span class = "text">월급쟁이의 첫 부동산공부 (500만원으로 50억 자산을 만든 소액 투자 비법)</span>
-                                    </a>
-                                    <p>지은이 : 김탁환</p>
-                                    <p>출판사 : 해냄출판사</p>
-                                    <p>출판년도 : 2019</p>
-                                    <p>도서관 : 구축도서관</p>
-                                </div>
-                            </div>
-                        </div>
-                     </div>
-                     <div class = "sub">
-                        <div class ="sub-left">
-                            <a href="#">
-                                <img src="https://image.aladin.co.kr/product/26987/37/cover/k962730610_1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class = "sub-box-left">
-                            <div class = "sub-item">
-                                <div class ="clip">
-                                    <a href="#">
-                                        <span class = "text">월급쟁이의 첫 부동산공부 (500만원으로 50억 자산을 만든 소액 투자 비법)</span>
-                                    </a>
-                                    <p>지은이 : 김탁환</p>
-                                    <p>출판사 : 해냄출판사</p>
-                                    <p>출판년도 : 2019</p>
-                                    <p>도서관 : 구축도서관</p>
-                                </div>
-                            </div>
-                        </div>
-                     </div>
-                     <div class = "sub">
-                        <div class ="sub-left">
-                            <a href="#">
-                                <img src="https://image.aladin.co.kr/product/26987/37/cover/k962730610_1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class = "sub-box-left">
-                            <div class = "sub-item">
-                                <div class ="clip">
-                                    <a href="#">
-                                        <span class = "text">월급쟁이의 첫 부동산공부 (500만원으로 50억 자산을 만든 소액 투자 비법)</span>
-                                    </a>
-                                    <p>지은이 : 김탁환</p>
-                                    <p>출판사 : 해냄출판사</p>
-                                    <p>출판년도 : 2019</p>
-                                    <p>도서관 : 구축도서관</p>
-                                </div>
-                            </div>
-                        </div>
-                     </div>
-
-
-
+                </div>
             </div>
+
+
+            <div class="bar-btns">
+                <a href="#" class="b-button">&laquo;&laquo;</a>
+                <a href="#" class="b-button">1</a>
+                <a href="#" class="b-button">2</a>
+                <a href="#" class="b-button">3</a>
+                <a href="#" class="b-button">4</a>
+                <a href="#" class="b-button">&raquo;&raquo;</a>
+            </div>
+
         </div>
 
-        
-      
+
 
         <!-- footer 영역 -->
         <footer>

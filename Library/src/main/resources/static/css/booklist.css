@@ -4,9 +4,10 @@ body {
 
 #section-container {
     width: 100%;
-    height: 100vh;
+       height: 1600px;
 
 }
+
 
 
 .h-wrap {
@@ -65,7 +66,7 @@ body {
 
 .show-book {
     width: 100%;
-   
+  
    
 }
 .show-book .show-book-in {
@@ -106,11 +107,13 @@ body {
     color: #fff;
 }
 .con-book-list {
+    position: relative;
     width: 1170px;
     margin: 15px auto;
+    
 }
 
-/* Ã¥Á¤º¸ Ãâ·ÂÇÏ´Â°ø°£ */
+/* ì±…ì •ë³´ ì¶œë ¥í•˜ëŠ”ê³µê°„ */
 .sub {
     width: 550px;
     height: 150px;
@@ -155,7 +158,7 @@ body {
     white-space: nowrap;
     font-size: 20px;
     text-overflow: ellipsis;
-    text-align: center;
+    text-align: left;
     letter-spacing: -0.02em;
 }
 
@@ -203,6 +206,19 @@ body {
     display: block;
     color: #4c4c4c;
 }
+
+.bar-btns{
+    position: relative;
+    font-size: 18px;
+    top: 0px;
+    text-align: center;
+    
+}
+.bar-btns a{
+    color : #000;
+}
+
+
 
 
 footer {

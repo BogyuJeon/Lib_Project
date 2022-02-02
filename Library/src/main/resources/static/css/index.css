@@ -167,20 +167,24 @@ body {
     display: inline-block;
     width: 400px;
     height: 425px;
-    border : 1px solid #d3d2cf;
+    border : 1px solid #000;
 }
 .setion-group2 .sec-group > .content2 {
     display: inline-block;
     width: 400px;
     height: 425px;
-    border: 1px solid  #d3d2cf;
+    border : 1px solid #000;
     margin : 0 40px;
+    background : url("/image/cloude.jpg") no-repeat;
+    background-image: 100% 100%;
 }
 .setion-group2 .sec-group > .content3 {
     display: inline-block;
     width: 400px;
     height: 425px;
-    border: 1px solid  #d3d2cf; 
+    border : 1px solid #000;
+    background : url("/image/time.jpg") no-repeat;
+    background-size: 100% 100%;
 }
 /* section-group2 - end */
 
@@ -267,6 +271,121 @@ body {
 }
 
 /* section-group3 - end */
+
+
+
+/* calendar */
+.calendar {
+    width: 400px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.calendar > .cal_in {
+    text-align: center;
+}
+.calendar > .cal_in > .title {
+    width: 50%;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+}
+.calendar > .cal_in > .calendar_btn {
+    width: 30px;
+    height: 33px;
+    border: none;
+    padding : 0;
+    background-color: #fff;
+    vertical-align: middle;
+    color: #000;
+}
+.calendar > .day {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+.calendar > .day > div {
+    display: table-cell;
+    text-align: center;
+    height: 50px;
+    vertical-align: middle;
+}
+.calendar > .day > div:first-child {
+    color : red;
+}
+.calendar > .day > div:last-of-type {
+    color : blue;
+}
+.calendar > .dates { 
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.calendar > .dates > .date {
+    text-align: center;
+    width: calc(100%/7);
+    height: 50px;
+    box-sizing: border-box;
+    line-height: 3;
+    border-radius: 3px;
+}
+.calendar > .dates > .date:nth-child(7n){color: blue;}
+.calendar > .dates > .date:nth-child(7n+1){color: red;}
+.calendar > .dates > .last {color: #c8c8c8 !important;}
+.calendar > .dates > .next {color: #c8c8c8 !important;}
+
+/* 컨텐트2 날씨 */
+.weather {
+    padding: 20px;
+    height: 58px;
+    text-align: center;
+    font-size: 7rem;
+    color: #292928;
+}
+.Curricon img {
+    width: 70%;
+}
+
+.CurrTemp {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 250px;
+    left: 80px;
+}
+.City {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 250px;
+    left: 250px;
+}
+
+
+
+/* 컨텐츠 3 시계 */
+.time-wrap {
+    padding: 20px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+.time-wrap > h2 {
+    font-size: 24px;
+    color: #fff;
+}
+
+#Clock {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+
+}
+
+
 
 
 
